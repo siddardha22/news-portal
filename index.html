@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Aggregator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>News Today</h1>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search news...">
+    <button onclick="handleSearch()">Search</button>
+  </div>
+
+  <div class="categories">
+    <button onclick="filterNews('general')">General</button>
+    <button onclick="filterNews('sports')">Sports</button>
+    <button onclick="filterNews('technology')">Technology</button>
+    <button onclick="filterNews('entertainment')">Entertainment</button>
+  </div>
+
+  <div class="news-container" id="news-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
