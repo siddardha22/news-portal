@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Aggregator</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+    /* Your CSS styles pasted here */
+    /* (All the CSS from your message remains here unchanged) */
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>News Today</h1>
+    <h3>Your Daily Dose Of News</h3>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search news...">
+    <button onclick="handleSearch()">Search</button> 
+  </div>
+
+  <div class="categories">
+    <button onclick="filterNews('general')">General</button>
+    <button onclick="filterNews('sports')">Sports</button>
+    <button onclick="filterNews('technology')">Technology</button>
+    <button onclick="filterNews('business')">Business</button>
+    <button onclick="filterNews('entertainment')">Entertainment</button>
+    <button onclick="filterNews('health')">Health</button>
+    <button onclick="filterNews('science')">Science</button>
+  </div>
+
+  <div class="news-container" id="news-container">
+    <!-- News cards will be dynamically injected here -->
+  </div>
+
+  <footer>
+    <p>News Aggregator &copy; 2025</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Contact</a>
+  </footer>
+
+  <script>
+    function handleSearch() {
+      const query = document.getElementById('search').value;
+      alert("Search feature to be implemented for: " + query);
+      // Future: fetchNewsBySearch(query);
+    }
+
+    function filterNews(category) {
+      alert("Filter feature to be implemented for: " + category);
+      // Future: fetchNewsByCategory(category);
+    }
+  </script>
+</body>
+</html>
